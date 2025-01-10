@@ -7,7 +7,7 @@ import {
   FaReact,
 } from "react-icons/fa";
 
-const Footer = () => {
+const Statusbar = () => {
   return (
     <footer className="bg-[#24292e] h-[25px] border-t border-[#1b1f23] text-[#e1e4e8] px-2 flex items-center justify-between text-[0.8rem]">
       <div className="flex items-center">
@@ -44,4 +44,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Statusbar;

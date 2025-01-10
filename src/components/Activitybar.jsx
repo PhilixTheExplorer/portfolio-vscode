@@ -3,7 +3,7 @@ import { VscFiles } from "react-icons/vsc";
 import { LuCircleUserRound } from "react-icons/lu";
 import { Link, useLocation } from "react-router-dom";
 
-const sidebarTopItems = [
+const activitybarTopItems = [
   {
     Icon: VscFiles,
     path: "/",
@@ -23,7 +23,7 @@ const sidebarTopItems = [
   },
 ];
 
-const sidebarBottomItems = [
+const activitybarBottomItems = [
   {
     Icon: LuCircleUserRound,
     path: "/about",
@@ -34,13 +34,13 @@ const sidebarBottomItems = [
   },
 ];
 
-const Sidebar = () => {
+const Activitybar = () => {
   const location = useLocation();
 
   return (
     <div className="flex flex-col justify-between h-[calc(100vh-55px)] bg-[#24292e] w-[60px]">
       <div>
-        {sidebarTopItems.map(({ Icon, path }) => (
+        {activitybarTopItems.map(({ Icon, path }) => (
           <Link to={path} key={path}>
             <div
               className={`cursor-pointer w-full px-2 hover:bg-[#1f2428] ${
@@ -53,7 +53,7 @@ const Sidebar = () => {
         ))}
       </div>
       <div>
-        {sidebarBottomItems.map(({ Icon, path }) => (
+        {activitybarBottomItems.map(({ Icon, path }) => (
           <Link to={path} key={path}>
             <div
               className={`cursor-pointer w-full px-2 hover:bg-[#1f2428] ${
@@ -69,4 +69,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Activitybar;
