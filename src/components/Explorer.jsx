@@ -9,7 +9,7 @@ const Explorer = () => {
   const [portfolioOpen, setPortfolioOpen] = useState(true);
 
   return (
-    <div className="bg-[#1f2428] w-64 text-[#e1e4e8] font-sans border-r border-[#161a1d] ">
+    <div className="hidden md:block bg-[#1f2428] w-64 text-[#e1e4e8] font-sans border-r border-[#161a1d] ">
       <p className="p-2 text-sm font-light uppercase tracking-wider">
         Explorer
       </p>

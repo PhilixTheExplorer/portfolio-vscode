@@ -11,7 +11,7 @@ function App() {
       <Titlebar />
       <div className="flex bg-[#24292e]">
         <Activitybar />
-        <Explorer />
+        <Explorer className="hidden md:block" />
         <div className="w-full">
           <Tabsbar />
           <main
