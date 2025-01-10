@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { FaChevronRight } from "react-icons/fa6";
 import { Link } from "react-router";
 import { items } from "../api/items";
+import { VscChevronRight } from "react-icons/vsc";
 
 const explorerItems = items;
 
@@ -23,13 +23,13 @@ const Explorer = () => {
         />
         <label
           htmlFor="portfolio-checkbox"
-          className="uppercase font-semibold text-[0.8rem] tracking-wider flex items-center cursor-pointer px-2"
+          className="uppercase font-semibold tracking-wider flex items-center cursor-pointer px-2"
         >
-          <FaChevronRight
-            className="transition-transform mr-2"
+          <VscChevronRight
+            className="transition-transform mr-1"
             style={portfolioOpen ? { transform: "rotate(90deg)" } : {}}
           />
-          Portfolio
+          <span className=" text-xs">Portfolio</span>
         </label>
         <div className={`p-2 ${portfolioOpen ? "block" : "hidden"}`}>
           {explorerItems.map((item) => (

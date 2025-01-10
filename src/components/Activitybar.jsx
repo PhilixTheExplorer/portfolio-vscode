@@ -1,7 +1,7 @@
-import { FaGithub, FaCode, FaEnvelope, FaCog } from "react-icons/fa";
-import { VscFiles } from "react-icons/vsc";
-import { LuCircleUserRound } from "react-icons/lu";
+import { VscAccount, VscCode, VscFiles, VscGithub } from "react-icons/vsc";
 import { Link, useLocation } from "react-router-dom";
+import { CiSettings } from "react-icons/ci";
+import { HiOutlineEnvelope } from "react-icons/hi2";
 
 const activitybarTopItems = [
   {
@@ -9,27 +9,27 @@ const activitybarTopItems = [
     path: "/",
   },
   {
-    Icon: FaGithub,
+    Icon: VscGithub,
     path: "/github",
   },
   {
-    Icon: FaCode,
+    Icon: VscCode,
     path: "/projects",
   },
 
   {
-    Icon: FaEnvelope,
+    Icon: HiOutlineEnvelope,
     path: "/contact",
   },
 ];
 
 const activitybarBottomItems = [
   {
-    Icon: LuCircleUserRound,
+    Icon: VscAccount,
     path: "/about",
   },
   {
-    Icon: FaCog,
+    Icon: CiSettings,
     path: "/settings",
   },
 ];

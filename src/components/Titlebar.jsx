@@ -1,4 +1,8 @@
-import { FiMinus, FiSquare, FiX } from "react-icons/fi";
+import {
+  VscChromeClose,
+  VscChromeMaximize,
+  VscChromeMinimize,
+} from "react-icons/vsc";
 
 const Titlebar = () => {
   return (
@@ -25,13 +29,13 @@ const Titlebar = () => {
       </p>
       <div className="hidden lg:flex items-center ml-auto space-x-4">
         <button className="h-[20px] w-[20px] flex items-center justify-center rounded hover:bg-[#3a3d41]">
-          <FiMinus className="text-white" />
+          <VscChromeMinimize className="text-white" />
         </button>
-        <button className="h-[10px] w-[12px] flex items-center justify-center rounded hover:bg-[#3a3d41]">
-          <FiSquare className="text-white" />
+        <button className="h-[20px] w-[20px] flex items-center justify-center rounded hover:bg-[#3a3d41]">
+          <VscChromeMaximize className="text-white" />
         </button>
         <button className="h-[20px] w-[20px] flex items-center justify-center rounded hover:bg-red-600">
-          <FiX className="text-white" />
+          <VscChromeClose className="text-white" />
         </button>
       </div>
     </section>
