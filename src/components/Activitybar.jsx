@@ -44,7 +44,7 @@ const Activitybar = () => {
           <Link to={path} key={path}>
             <div
               className={`cursor-pointer w-full px-2 hover:bg-[#1f2428] ${
-                location.pathname === path ? "border-l-2 border-[#bd93f9]" : ""
+                location.pathname === path ? "border-l-2 border-[#42A5F5]" : ""
               }`}
             >
               <Icon className="h-12 w-12 p-2.5 block mx-auto text-gray-400 hover:text-white" />
@@ -57,7 +57,7 @@ const Activitybar = () => {
           <Link to={path} key={path}>
             <div
               className={`cursor-pointer w-full px-2 hover:bg-[#1f2428] ${
-                location.pathname === path ? "border-l-2 border-[#bd93f9]" : ""
+                location.pathname === path ? "border-l-2 border-[#42A5F5]" : ""
               }`}
             >
               <Icon className="h-12 w-12 p-2.5 block mx-auto text-gray-400 hover:text-white" />

@@ -9,6 +9,7 @@ import ProjectsPage from "./pages/ProjectsPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import GithubPage from "./pages/GithubPage.jsx";
+import SettingsPage from "./pages/SettingsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "github",
         element: <GithubPage />,
+      },
+      {
+        path: "settings",
+        element: <SettingsPage />,
       },
       {
         path: "*",

@@ -1,4 +1,4 @@
-import { Outlet, BrowserRouter as Router } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Titlebar from "./components/Titlebar";
 import Statusbar from "./components/Statusbar";
 import Activitybar from "./components/Activitybar";

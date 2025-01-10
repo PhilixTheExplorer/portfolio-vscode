@@ -17,6 +17,7 @@ const Tabsbar = () => {
             icon={tab.icon}
             filename={tab.name}
             path={tab.path}
+            color={tab.color}
           />
         ))}
       </div>
