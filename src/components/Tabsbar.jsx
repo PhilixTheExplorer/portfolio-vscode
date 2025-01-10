@@ -1,14 +1,8 @@
-import { FaHome } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import Tab from "./Tab";
+import { items } from "../api/items";
 
-const tabs = [
-  { icon: FaHome, filename: "home.jsx", path: "/" },
-  { icon: FaHome, filename: "about.html", path: "/about" },
-  { icon: FaHome, filename: "contact.css", path: "/contact" },
-  { icon: FaHome, filename: "projects.js", path: "/projects" },
-  { icon: FaHome, filename: "github.md", path: "/github" },
-];
+const tabs = items;
 
 const Tabsbar = () => {
   const location = useLocation();
@@ -21,7 +15,7 @@ const Tabsbar = () => {
           <Tab
             key={tab.path}
             icon={tab.icon}
-            filename={tab.filename}
+            filename={tab.name}
             path={tab.path}
           />
         ))}

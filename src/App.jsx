@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { Outlet, BrowserRouter as Router } from "react-router-dom";
 import Titlebar from "./components/Titlebar";
 import Statusbar from "./components/Statusbar";
 import Activitybar from "./components/Activitybar";
@@ -7,7 +7,7 @@ import Explorer from "./components/Explorer";
 
 function App() {
   return (
-    <Router>
+    <>
       <Titlebar />
       <div className="flex bg-[#24292e]">
         <Activitybar />
@@ -18,12 +18,12 @@ function App() {
             id="main-editor"
             className="p-8 md:p-8 sm:p-4 text-[#efefef] font-mono flex-1 h-[85vh] overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#333536] scrollbar-track-[#24292e] scrollbar-thumb-border-l-[1px] scrollbar-thumb-border-[#1e1f29] scrollbar-track-border-l-[1px] scrollbar-track-border-[#1e1f29]"
           >
-            Children
+            <Outlet />
           </main>
         </div>
       </div>
       <Statusbar />
-    </Router>
+    </>
   );
 }
 

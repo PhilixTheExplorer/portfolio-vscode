@@ -1,35 +1,9 @@
 import { useState } from "react";
-import { FaHome } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 import { Link } from "react-router";
+import { items } from "../api/items";
 
-const explorerItems = [
-  {
-    name: "home.jsx",
-    path: "/",
-    icon: FaHome,
-  },
-  {
-    name: "about.html",
-    path: "/about",
-    icon: FaHome,
-  },
-  {
-    name: "contact.css",
-    path: "/contact",
-    icon: FaHome,
-  },
-  {
-    name: "projects.js",
-    path: "/projects",
-    icon: FaHome,
-  },
-  {
-    name: "github.md",
-    path: "/github",
-    icon: FaHome,
-  },
-];
+const explorerItems = items;
 
 const Explorer = () => {
   const [portfolioOpen, setPortfolioOpen] = useState(true);
@@ -52,7 +26,7 @@ const Explorer = () => {
           className="uppercase font-bold text-[0.8rem] tracking-wider flex items-center cursor-pointer px-2"
         >
           <FaChevronRight
-            className="transition-transform"
+            className="transition-transform mr-2"
             style={portfolioOpen ? { transform: "rotate(90deg)" } : {}}
           />
           Portfolio
