@@ -1,17 +1,16 @@
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Tab from "./Tab";
 import { items } from "../api/items";
 
 const tabs = items;
 
 const Tabsbar = () => {
-  // const location = useLocation();
-  // const currentTab = tabs.find((tab) => tab.path === location.pathname);
+  const location = useLocation();
+  const currentTab = tabs.find((tab) => tab.path === location.pathname);
 
   return (
     <div className="flex bg-[#1f2428] overflow-x-auto">
-      {/* <div className="hidden min-[900px]:flex"> */}
-      <div className="flex">
+      <div className="hidden min-[900px]:flex">
         {tabs.map((tab) => (
           <Tab
             key={tab.path}
@@ -22,16 +21,16 @@ const Tabsbar = () => {
           />
         ))}
       </div>
-      {/* <div className="flex min-[900px]:hidden">
+      <div className="flex min-[900px]:hidden">
         {currentTab && (
           <Tab
             icon={currentTab.icon}
-            filename={currentTab.filename}
+            filename={currentTab.name}
             path={currentTab.path}
             color={currentTab.color}
           />
         )}
-      </div> */}
+      </div>
     </div>
   );
 };
