@@ -13,3 +13,20 @@
   margin-right: 1rem;
   color: grey;
 }
+
+.blink-cursor::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: #42a5f5;
+  font-weight: 100;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
