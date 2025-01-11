@@ -6,7 +6,7 @@ import {
 
 const Titlebar = () => {
   return (
-    <section className="bg-[#1f2428] h-[30px] px-2 flex items-center justify-between text-white font-sans text-sm border-b border-[#191d20]">
+    <section className="bg-[var(--titlebar-bg)] h-[30px] px-2 flex items-center justify-between text-white font-sans text-sm border-b border-[#191d20]">
       <img
         src="/favicon.ico"
         alt="VSCode Icon"
@@ -28,13 +28,13 @@ const Titlebar = () => {
         Kaung Hset Hein - PhilixTheExplorer
       </p>
       <div className="hidden lg:flex items-center ml-auto space-x-4">
-        <button className="h-[20px] w-[20px] flex items-center justify-center rounded hover:bg-[#3a3d41]">
+        <button className="h-[20px] w-[20px] flex items-center justify-center  hover:bg-[var(--titlebar-hover-bg)]">
           <VscChromeMinimize className="text-white" />
         </button>
-        <button className="h-[20px] w-[20px] flex items-center justify-center rounded hover:bg-[#3a3d41]">
+        <button className="h-[20px] w-[20px] flex items-center justify-center  hover:bg-[var(--titlebar-hover-bg)]">
           <VscChromeMaximize className="text-white" />
         </button>
-        <button className="h-[20px] w-[20px] flex items-center justify-center rounded hover:bg-red-600">
+        <button className="h-[20px] w-[20px] flex items-center justify-center  hover:bg-red-600">
           <VscChromeClose className="text-white" />
         </button>
       </div>

@@ -9,7 +9,7 @@ const Tabsbar = () => {
   const currentTab = tabs.find((tab) => tab.path === location.pathname);
 
   return (
-    <div className="flex bg-[#1f2428] overflow-x-auto">
+    <div className="flex bg-[var(--tabs-bg)] overflow-x-auto">
       <div className="hidden min-[900px]:flex">
         {tabs.map((tab) => (
           <Tab

@@ -9,15 +9,12 @@ function App() {
   return (
     <>
       <Titlebar />
-      <div className="flex bg-[#24292e]">
+      <div className="flex bg-[var(--main-bg)] text-[var(--text-color)] font-mono">
         <Activitybar />
         <Explorer className="hidden md:block" />
         <div className="w-full">
           <Tabsbar />
-          <main
-            id="main-editor"
-            className="p-8 md:p-8 sm:p-4 text-[#efefef] font-mono flex-1 h-[85vh] overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#333536] scrollbar-track-[#24292e] scrollbar-thumb-border-l-[1px] scrollbar-thumb-border-[#1e1f29] scrollbar-track-border-l-[1px] scrollbar-track-border-[#1e1f29]"
-          >
+          <main className="p-8 md:p-8 sm:p-4 flex-1 h-[85vh] overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#333536] scrollbar-track-[#24292e] scrollbar-thumb-border-l-[1px] scrollbar-thumb-border-[#1e1f29] scrollbar-track-border-l-[1px] scrollbar-track-border-[#1e1f29]">
             <Outlet />
           </main>
         </div>

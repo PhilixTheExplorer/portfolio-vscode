@@ -38,13 +38,15 @@ const Activitybar = () => {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col justify-between h-[calc(100vh-55px)] bg-[#24292e] w-[60px]">
+    <div className="flex flex-col justify-between h-[calc(100vh-55px)] bg-[var(--activitybar-bg)] w-[60px]">
       <div>
         {activitybarTopItems.map(({ Icon, path }) => (
           <Link to={path} key={path}>
             <div
-              className={`cursor-pointer w-full px-2 hover:bg-[#1f2428] ${
-                location.pathname === path ? "border-l-2 border-[#42A5F5]" : ""
+              className={`cursor-pointer w-full px-2 hover:bg-[var(--activitybar-hover-bg)] ${
+                location.pathname === path
+                  ? "border-l-2 border-[var(--accent-color)]"
+                  : ""
               }`}
             >
               <Icon className="h-12 w-12 p-2.5 block mx-auto text-gray-400 hover:text-white" />
@@ -56,8 +58,10 @@ const Activitybar = () => {
         {activitybarBottomItems.map(({ Icon, path }) => (
           <Link to={path} key={path}>
             <div
-              className={`cursor-pointer w-full px-2 hover:bg-[#1f2428] ${
-                location.pathname === path ? "border-l-2 border-[#42A5F5]" : ""
+              className={`cursor-pointer w-full px-2 hover:bg-[var(--activitybar-hover-bg)] ${
+                location.pathname === path
+                  ? "border-l-2 border-[var(--accent-color)]"
+                  : ""
               }`}
             >
               <Icon className="h-12 w-12 p-2.5 block mx-auto text-gray-400 hover:text-white" />

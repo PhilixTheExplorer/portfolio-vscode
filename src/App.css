@@ -1,0 +1,20 @@
+:root {
+  --main-bg: #24292e;
+  --text-color: #efefef;
+  --text-light: #e1e4e8;
+  --accent-color: #42a5f5;
+  --titlebar-bg: #1f2428;
+  --titlebar-hover-bg: #3a3d41;
+  --activitybar-bg: #24292e;
+  --activitybar-hover-bg: #1f2428;
+  --explorer-bg: #1f2428;
+  --explorer-hover-bg: #24292e;
+  --explorer-border: #161a1d;
+  --tabs-bg: #1f2428;
+  --tab-active-bg: #24292e;
+  --tab-border: #24292e;
+  --statusbar-bg: #24292e;
+  --statusbar-border: #1b1f23;
+  --statusbar-hover-bg: #4f4f52;
+  --statusbar-text-color: #e1e4e8;
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
+@import "./App.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +18,7 @@
 .blink-cursor::after {
   content: "|";
   animation: blink 1s step-end infinite;
-  color: #42a5f5;
+  color: var(--accent-color);
   font-weight: 100;
 }
 

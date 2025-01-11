@@ -6,9 +6,9 @@ const Tab = ({ icon: Icon, filename, path, color }) => {
   return (
     <Link to={path}>
       <div
-        className={`px-5 py-2 bg-[#1f2428] text-[#ececec] flex items-center border-t border-x border-[#24292e] font-sans text-[0.9rem] cursor-pointer ${
+        className={`px-5 py-2 text-[var(--text-color)] flex items-center border-t border-x border-[var(--tab-border)] font-sans text-[0.9rem] cursor-pointer ${
           location.pathname === path
-            ? "border-t border-x-0 border-[#42A5F5] bg-[#24292e]"
+            ? "border-t-[var(--accent-color)] bg-[var(--tab-active-bg)]"
             : ""
         }`}
       >

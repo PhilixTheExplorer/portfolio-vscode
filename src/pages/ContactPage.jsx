@@ -28,7 +28,7 @@ function ContactPage() {
       <div className="code text-xs leading-[1.5rem] sm:text-lg counter-reset-line">
         <p className="line before:content-[counter(line)] before:counter-increment-line before:mr-4 before:text-gray-500">
           <span className="text-[#D16D9E]">const</span>
-          <span className="text-[#42A5F5]"> socials </span>
+          <span className="text-[var(--accent-color)]"> socials </span>
           <span className="text-white">= </span>
           <span className="text-yellow-500">&#123;</span>
         </p>
@@ -42,7 +42,7 @@ function ContactPage() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#42A5F5] no-underline hover:underline"
+              className="text-[var(--accent-color)] no-underline hover:underline"
             >
               {item.link}
             </a>
