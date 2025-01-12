@@ -23,7 +23,7 @@ const Titlebar = () => {
         width={20}
         className="mr-2"
       />
-      <div className=" hidden lg:flex flex-1 items-center space-x-4 mr-auto ml-2">
+      <div className="hidden min-[1100px]:flex flex-1 items-center space-x-4 mr-auto ml-2">
         <MenuItem label="File" />
         <MenuItem label="Edit" />
         <MenuItem label="Selection" />
