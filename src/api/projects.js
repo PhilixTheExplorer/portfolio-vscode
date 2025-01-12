@@ -1,0 +1,52 @@
+export const projects = [
+    {
+        title: "Next.js Dashboard",
+        image: "https://images8.alphacoders.com/593/593417.jpg",
+        description: "Next.js Dashboard with Tailwind CSS and TypeScript by Vercel, Try login with `email: user@nextmail.com, password: 123456`",
+        techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
+        link: "https://github.com/PhilixTheExplorer/nextjs-vercel-acme",
+        source_code: "https://github.com/PhilixTheExplorer/nextjs-vercel-acme",
+        demo: "https://nextjs-dashboard-ten-flax-62.vercel.app/",
+    },
+    {
+        title: "Campus Link Project",
+        image: "https://images8.alphacoders.com/593/593417.jpg",
+        description: "A Full Stack University Management System built by CS students",
+        techStack: ["React", "Vite", "Tailwind", "Node.js", "Express.js", "Postgresql", "Prisma", "JWT", "MinIO"],
+        link: "https://github.com/KMUTT-CampusLink",
+        source_code: "https://github.com/KMUTT-CampusLink",
+    },
+    {
+        title: "VS Code Theme Portfolio",
+        image: "https://images8.alphacoders.com/593/593417.jpg",
+        description: "Personal Portfolio built with React, Tailwind CSS, and VS Code Theme",
+        techStack: ["React", "Vite", "Tailwind"],
+        link: "https://github.com/PhilixTheExplorer/portfolio-vscode",
+        source_code: "https://github.com/PhilixTheExplorer/portfolio-vscode",
+        demo: "https://kaung-hset-hein-vs.vercel.app/",
+    },
+    {
+        title: "Studies Shares Project",
+        image: "https://images8.alphacoders.com/593/593417.jpg",
+        description: "First Year CS Hackthon Project - A Full Stack project for university students to connect and share resources.",
+        techStack: ["React", "Vite", "Tailwind", "MySQL", "Express.js", "Node.js", "REST API", "JWT"],
+        link: "https://csgit.sit.kmutt.ac.th/cshack17/studies-shares-project",
+        source_code: "https://csgit.sit.kmutt.ac.th/cshack17/studies-shares-project",
+    },
+    {
+        title: "Bank Project Backend",
+        image: "https://images8.alphacoders.com/593/593417.jpg",
+        description: "RESTful API service for Bank Project built with Node.js, Express.js , MySQL",
+        techStack: ["MySQL", "Node.js", "Express.js", "JWT", "REST API"],
+        link: "https://csgit.sit.kmutt.ac.th/66130500810/66130500810_backend_week3",
+        source_code: "https://csgit.sit.kmutt.ac.th/66130500810/66130500810_backend_week3",
+    },
+    {
+        title: "Bank Project Frontend",
+        image: "https://images8.alphacoders.com/593/593417.jpg",
+        description: "Bank Project frontend built with React, Vite, Material-UI",
+        techStack: ["React", "Vite", "MUI"],
+        link: "https://csgit.sit.kmutt.ac.th/66130500810/66130500810_bank_project_auth",
+        source_code: "https://csgit.sit.kmutt.ac.th/66130500810/66130500810_bank_project_auth",
+    }
+];
