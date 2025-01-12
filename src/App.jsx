@@ -14,7 +14,7 @@ function App() {
         <Explorer className="hidden md:block" />
         <div className="w-full">
           <Tabsbar />
-          <main className="p-4 md:p-8 flex-1 h-[85vh] overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#333536] scrollbar-track-[#24292e] scrollbar-thumb-border-l-[1px] scrollbar-thumb-border-[#1e1f29] scrollbar-track-border-l-[1px] scrollbar-track-border-[#1e1f29]">
+          <main className="p-4 md:p-8 flex-1 h-[calc(100vh-100px)] overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#333536] scrollbar-track-[#24292e] scrollbar-thumb-border-l-[1px] scrollbar-thumb-border-[#1e1f29] scrollbar-track-border-l-[1px] scrollbar-track-border-[#1e1f29]">
             <Outlet />
           </main>
         </div>
