@@ -7,19 +7,22 @@ const activitybarTopItems = [
   {
     Icon: VscFiles,
     path: "/",
+    tooltip: "Home",
   },
   {
     Icon: VscGithub,
     path: "/github",
+    tooltip: "GitHub",
   },
   {
     Icon: VscCode,
     path: "/projects",
+    tooltip: "Projects",
   },
-
   {
     Icon: HiOutlineEnvelope,
     path: "/contact",
+    tooltip: "Contact Me",
   },
 ];
 
@@ -27,10 +30,12 @@ const activitybarBottomItems = [
   {
     Icon: VscAccount,
     path: "/about",
+    tooltip: "About Me",
   },
   {
     Icon: CiSettings,
     path: "/settings",
+    tooltip: "Credits",
   },
 ];
 
@@ -40,8 +45,8 @@ const Activitybar = () => {
   return (
     <div className="flex flex-col justify-between h-[calc(100vh-55px)] bg-[var(--activitybar-bg)] w-[60px]">
       <div>
-        {activitybarTopItems.map(({ Icon, path }) => (
-          <Link to={path} key={path}>
+        {activitybarTopItems.map(({ Icon, path, tooltip }) => (
+          <Link to={path} key={path} title={tooltip}>
             <div
               className={`cursor-pointer w-full px-2 hover:bg-[var(--activitybar-hover-bg)] ${
                 location.pathname === path
@@ -55,8 +60,8 @@ const Activitybar = () => {
         ))}
       </div>
       <div>
-        {activitybarBottomItems.map(({ Icon, path }) => (
-          <Link to={path} key={path}>
+        {activitybarBottomItems.map(({ Icon, path, tooltip }) => (
+          <Link to={path} key={path} title={tooltip}>
             <div
               className={`cursor-pointer w-full px-2 hover:bg-[var(--activitybar-hover-bg)] ${
                 location.pathname === path
