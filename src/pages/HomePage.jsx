@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 function HomePage() {
   return (
-    <div className="flex flex-col text-md h-full">
+    <div className="flex flex-col text-base h-full">
       <div className="md:hidden my-4">
         <p className="text-sm text-red-300 md:hidden">
           View this portfoilo on Desktop to experience full VS Code Style.

@@ -1,10 +1,10 @@
 function AboutPage() {
   return (
-    <div className="text-md sm:text-2xl">
+    <div className="text-base sm:text-2xl">
       <h1 className="text-4xl font-bold mb-8 text-center">💫 About Me</h1>
       <div className="max-w-4xl mx-auto">
         <hr className="mb-4" />
-        <h2 className="text-xl sm:text-3xl font-bold mb-4">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
           👋 Hi, I&apos;m{" "}
           <span className="text-[var(--accent-color)]">Kaung Hset Hein</span>{" "}
           a.k.a
@@ -14,6 +14,9 @@ function AboutPage() {
         <p className="sm:text-lg mb-4">
           🎓 Computer Science Student <br className="sm:hidden" />| 💻 Aspiring
           Software Engineer <br className="sm:hidden" />| 📚 Lifelong Learner
+        </p>
+        <p className="text-lg my-4">
+          💡 Always eager to learn and take on new challenges!
         </p>
         <hr className="my-4" />
         <h3 className="font-bold mb-4">
@@ -25,7 +28,7 @@ function AboutPage() {
         <ul className="list-disc list-inside sm:text-xl mb-4">
           <li>
             <strong className="text-[var(--accent-color)]">Languages:</strong>{" "}
-            Java, JavaScript, Python, Kotlin (learning), Dart/Flutter (learning)
+            Java, JavaScript, Python
           </li>
           <li>
             <strong className="text-[var(--accent-color)]">Frontend:</strong>{" "}
@@ -33,7 +36,7 @@ function AboutPage() {
           </li>
           <li>
             <strong className="text-[var(--accent-color)]">Backend:</strong>{" "}
-            Node.js, Express
+            Node.js, Express.js
           </li>
           <li>
             <strong className="text-[var(--accent-color)]">
@@ -42,6 +45,7 @@ function AboutPage() {
             MySQL, SQLite, PostgreSQL, MongoDB, Prisma
           </li>
         </ul>
+        <hr className="my-4" />
         <h3 className="font-bold mb-4">
           🌱{" "}
           <span className="bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent-color)] bg-no-repeat bg-[length:100%_10%] bg-[0_90%] transition-[background-size] duration-250 ease-in hover:bg-[length:100%_90%]">
@@ -51,10 +55,61 @@ function AboutPage() {
         <ul className="list-disc list-inside sm:text-xl mb-4">
           <li>Kotlin and Android development</li>
           <li>Flutter for cross-platform app development</li>
+        </ul>{" "}
+        <hr className="my-4" />
+        <h3 className="font-bold mb-4">
+          🎉{" "}
+          <span className="bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent-color)] bg-no-repeat bg-[length:100%_10%] bg-[0_90%] transition-[background-size] duration-250 ease-in hover:bg-[length:100%_90%]">
+            Random Facts About Me
+          </span>
+        </h3>
+        <ul className="list-none list-inside text-base mb-4">
+          <li className="text-red-500">
+            🌍 I&apos;m all about exploring new cultures. Teach me a phrase in
+            your language, and I&apos;m sold!
+          </li>
+          <li className="text-blue-500">
+            😺 I&apos;m a big cat person. If you&apos;ve got a cat story,
+            I&apos;m all ears!
+          </li>
+          <li className="text-yellow-500">
+            🎥 Movies are my escape. I can binge-watch just about anything with
+            a good plot.
+          </li>
+          <li className="text-green-500">
+            💻 Debugging? It&apos;s like playing detective, and I secretly enjoy
+            cracking the case.
+          </li>
+          <li className="text-purple-500">
+            ✈️ My dream? Coding from a beach somewhere tropical (wifi
+            permitting, of course).
+          </li>
+          <li className="text-orange-500">
+            🎓 I&apos;m a sponge for knowledge. Teach me something cool, and
+            I&apos;ll be your biggest fan.
+          </li>
+          <li className="text-indigo-500">
+            🖥️ Full-stack development is my jam right now, but I&apos;m also
+            diving into Kotlin and Flutter for some app-building fun.
+          </li>
+          <li className="text-teal-500">
+            🧠 I&apos;m a total newbie to NLP, but I&apos;m super curious and
+            can&apos;t wait to learn more! Even its name fascinates me! One day,
+            I hope to create something for my country&apos;s language.
+          </li>
+          <li className="text-lime-500">
+            📚 Learning is a constant adventure for me. Whether it&apos;s tech,
+            life hacks, or a quirky fun fact, I&apos;m always up for it!
+          </li>
+          <li className="text-[var(--accent-color)]">
+            🚀 This portfolio? Just the first step.{" "}
+            <span className="text-blue-500">Bigger</span>,
+            <span className="text-purple-500"> better</span>, and
+            <span className="text-green-500"> bolder</span> things are coming.
+            Stay tuned!
+          </li>
         </ul>
-        <p className="text-lg mb-4">
-          📚 Always eager to learn and take on new challenges!
-        </p>
+        <hr className="my-4" />
         <h3 className="font-bold mb-4">
           💻{" "}
           <span className="bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent-color)] bg-no-repeat bg-[length:100%_10%] bg-[0_90%] transition-[background-size] duration-250 ease-in hover:bg-[length:100%_90%]">
