@@ -95,7 +95,7 @@ function AboutPage() {
           <li className="text-teal-500">
             🧠 I&apos;m a total newbie to NLP, but I&apos;m super curious and
             can&apos;t wait to learn more! Even its name fascinates me! One day,
-            I hope to create something for my country&apos;s language.
+            I hope to create something for my native language, Burmese.
           </li>
           <li className="text-lime-500">
             📚 Learning is a constant adventure for me. Whether it&apos;s tech,

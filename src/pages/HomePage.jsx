@@ -11,7 +11,9 @@ function HomePage() {
           This is just a warning message in a mobile view.
         </p>
       </div>
-      <div className="h-4 md:h-20"></div>
+      <div className="opacity-75 z-0">
+        <img src="/avatar.png" className="h-24 object-cover" alt="Avatar" />
+      </div>
       <h1 className="font-extrabold text-[var(--accent-color)] text-3xl md:text-7xl mb-4 blink-cursor">
         Kaung Hset Hein
       </h1>
@@ -20,7 +22,7 @@ function HomePage() {
         🎓 Computer Science Student <br className="sm:hidden" />| 💻 Aspiring
         Software Engineer <br className="sm:hidden" />| 📚 Lifelong Learner
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
+      <div className="flex flex-wrap items-center gap-4 mt-4">
         <Link
           to="/about"
           className="bg-cyan-700 p-2 cursor-pointer bg-gradient-to-r from-[var(--accent-color)] to-[var(--accent-color)] bg-no-repeat bg-[length:100%_0%] bg-[0_90%] transition-[background-size] duration-250 ease-in hover:bg-[length:100%_100%]"
@@ -45,6 +47,12 @@ function HomePage() {
         >
           <button className="">Github Stats</button>
         </Link>
+      </div>
+      <div className="mt-24 text-xs">
+        <p>
+          Education, Work Experience & Certifications Sections are on the way to
+          be deployed soon.
+        </p>
       </div>
     </div>
   );
