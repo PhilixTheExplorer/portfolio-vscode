@@ -75,9 +75,28 @@ const GitHubUserStats = () => {
       </div>
       <div className="bg-gray-900 text-gray-300 my-6 p-6">
         {/* Proudly created with GPRM ( https://gprm.itsvg.in ) */}
-        <h1 className="text-4xl font-bold mb-8 text-center">
+        <h1 className="text-4xl font-bold mb-8 text-center">GitHub Stats</h1>
+        <div className="flex justify-center mb-8">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=PhilixTheExplorer&theme=radical&hide_border=false&include_all_commits=false&count_private=false"
+            alt="GitHub Stats"
+          />
+        </div>
+        <div className="flex justify-center mb-8">
+          <img
+            src="https://streak-stats.demolab.com/?user=PhilixTheExplorer&theme=radical"
+            alt="GitHub Streak"
+          />
+        </div>
+        <div className="flex justify-center mb-8">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=PhilixTheExplorer&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact"
+            alt="Top Languages"
+          />
+        </div>
+        <h2 className="text-3xl font-bold mb-4 text-center">
           🏆 GitHub Trophies
-        </h1>
+        </h2>
         <div className="flex justify-center mb-8">
           <img
             src="https://github-profile-trophy.vercel.app/?username=PhilixTheExplorer&theme=radical&no-frame=false&no-bg=true&margin-w=4"
